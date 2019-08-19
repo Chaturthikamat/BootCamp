@@ -1,0 +1,155 @@
+body {
+    color: #787878;
+    font-size: 12px;
+    font-family: Arial,sans-serif;
+    background-image: url(../images/skelatal_weave.png);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background-color: #fff;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.header {
+    background: #FFF;
+    border-top: 4px solid #7DA817;
+    position: relative;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+.navbar-brand>img{
+    display: block;
+}
+img{
+    vertical-align: middle;
+    border:0;    
+}
+
+.header .site_logo {
+    padding: 20px 0 30px;
+}
+
+.header .site_logo .nopadd .lan_sel {
+    position: relative;
+    top: 35px;
+    float: right;
+}
+
+#lang_select_list{
+    height: 32px;
+    position: relative;
+    z-index: 99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style-type: none !important;
+}
+
+#lang_sel_list li {
+    float: left;
+    position: relative;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style-type: none !important;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.flag_selection_navbar{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 1px;
+    border-radius: 50%;
+    opacity: .2;
+    transition: all .2s linear .2s;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #e7e7e7;
+    ;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.header .menu_section .navbar .navbar-collapse .navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav li {
+    border-bottom: 4px solid transparent;
+}
+
+.navbar-nav li:hover{
+    border-bottom: 4px solid #7DA817;
+    position: relative; ;
+}
+
+.shipping_container {
+    padding: 35px 0;
+    background: #fff;
+}
+.mainPageImage{
+    width:100%;
+    height:auto;;
+}
+
+.image_responsive_warnings{
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.mid_text {
+    text-align: center;
+}
+
+.mid_text h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #555;
+    font-weight: 700;
+    margin-top: 7px;
+    padding-top: 15px;
+}
+
+.homepage-content .shipping_container .warning .mid_text h4 {
+    color: #555;
+    font-weight: 400;
+    font-size: 18px;
+}
