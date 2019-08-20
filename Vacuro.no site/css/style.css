@@ -1,35 +1,39 @@
 body {
     color: #787878;
     font-size: 12px;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     background-image: url(../images/skelatal_weave.png);
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     line-height: 1.5;
     background-color: #fff;
 }
-:after, :before {
+
+:after,
+:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .header {
     background: #FFF;
     border-top: 4px solid #7DA817;
     position: relative;
 }
 
-.container{
+.container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.row{
+.row {
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .navbar-brand {
     float: left;
     height: 50px;
@@ -37,18 +41,21 @@ body {
     font-size: 18px;
     line-height: 20px;
 }
+
 a {
     color: #337ab7;
     text-decoration: none;
     background-color: transparent;
     box-sizing: border-box;
 }
-.navbar-brand>img{
+
+.navbar-brand>img {
     display: block;
 }
-img{
+
+img {
     vertical-align: middle;
-    border:0;    
+    border: 0;
 }
 
 .header .site_logo {
@@ -61,7 +68,7 @@ img{
     float: right;
 }
 
-#lang_select_list{
+#lang_select_list {
     height: 32px;
     position: relative;
     z-index: 99;
@@ -84,7 +91,7 @@ ul {
     text-align: -webkit-match-parent;
 }
 
-.flag_selection_navbar{
+.flag_selection_navbar {
     width: 20px;
     height: 20px;
     position: relative;
@@ -103,7 +110,8 @@ ul {
     ;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
     border-color: #e7e7e7;
 }
 
@@ -113,4 +121,115 @@ ul {
 
 .navbar-nav li {
     border-bottom: 4px solid transparent;
+}
+
+.navbar-nav li:hover {
+    border-bottom: 4px solid #7DA817;
+    position: relative;
+    ;
+}
+
+.shipping_container {
+    padding: 35px 0;
+    background: #fff;
+}
+
+.mainPageImage {
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+}
+
+.image_responsive_warnings {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.mid_text {
+    text-align: center;
+}
+
+.mid_text h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #555;
+    font-weight: 700;
+    margin-top: 7px;
+    padding-top: 15px;
+}
+
+.homepage-content .shipping_container .warning .mid_text h4 {
+    color: #555;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.shipping_container_content {
+    padding: 35px 0;
+    background: #fff;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: 10px;
+}
+
+.vacuro_simple h3 {
+    font-size: 24px;
+    color: #7DA817;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.1;
+
+}
+
+.vacuro_sec .vacuro_simple h4 {
+    color: #555;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 1.1;
+}
+
+ul .container_list_ul {
+    list-style-type: circle;
+
+}
+
+
+.why_vacuro h3 {
+    padding-right: 30px;
+    font-size: 24px;
+    color: #7DA817;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.1;
+}
+
+.color2 {
+    color: #7DA817;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px;
+    border-top: 1px solid #eee;
+    width: 1252px;
 }
