@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Task Hide and Show selected element</title>
+</head>
+
+<style type="text/css">
+    /* .p_main {
+        border: 1px solid #f00;
+    }
+
+    ​ .div_desc {
+        display: none;
+    } */
+    .container {
+        text-align: center;
+        width: 75%;
+        height: auto;
+        background: #eee;
+        color: #888;
+    }
+
+    .liP {}
+
+    .movies {
+        display: none;
+        color: red;
+    }
+
+    .songs {
+        display: none;
+        color: green;
+    }
+
+    .shows {
+        display: none;
+        color: blue;
+    }
+
+    .audiobooks {
+        display: none;
+        color: orange;
+    }
+
+    .radio {
+        display: none;
+        color: blueviolet;
+    }
+</style>
+​
+
+<body>
+    <div class="container">
+        <ul class=".menu">
+            <li class="menu" value=".movies">Movies
+                <div class="movies">Horror</div>
+                <div class="movies">Rom-Com</div>
+                <div class="movies">Scientific Fiction</div>
+            </li>
+            <li class="menu" value=".songs">Songs
+                <div class="songs"> Party</div>
+                <div class="songs"> EDM </div>
+                <div class="songs"> Sufi</div>
+            </li>
+            <li class="menu" value=".shows"> Tv shows
+                <div class="shows">Sacred Games</div>
+                <div class="shows">Legion</div>
+                <div class="shows">Friends</div>
+            </li>
+            <li class="menu" value=".audiobooks">Audio Books
+                <div class="audiobooks"> Big Bang</div>
+                <div class="audiobooks"> The secret </div>
+                <div class="audiobooks">Game of life</div>
+            </li>
+            <li class="menu" value=".radio"> Radio
+                <div class="radio"> Big FM</div>
+                <div class="radio"> Radio Mirchi </div>
+                <div class="radio">All India</div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- <div class="p_main">
+        <div class="span_title">Porvorim </div>
+        <div class="div_desc"> Close to panjim, it has the world famous Mall de Goa </div>
+    </div>
+    ​
+    <div class="p_main">
+        <div class="span_title">Margao</div>
+        <div class="div_desc"> Down south, commercial capital of Goa </div>
+
+    </div> -->
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu').click(function () {
+            var $clicked = $(this)
+            $('.menu').each(function () {
+                var $menu = $(this);
+                if (!$menu.is($clicked)) {
+                    $($menu.attr('value')).hide();
+                }
+            });
+            $($clicked.attr('value')).slideToggle();
+        });
+    });
+
+
+
+    //jquery Task one
+    // $(document).ready(function () {
+    //     $('.p_main').click(function () {
+    //         // console.log($(this).html());
+    //         ​
+    //         $(this).find('.div_desc').toggle();
+    //         // $('.div_desc').toggle();
+    //     });​​
+    //     // $('.span_title').click(function () {
+    //     // 	// console.log($(this).html());
+    //     ​
+    //     // 	$(this).parent().find('.div_desc').toggle();
+    //     // 	// $('.div_desc').toggle();
+    //     // });
+    //     ​​
+    //     // $('#btn_menu').click(function(){
+    //     // 	$('#div_message').toggle();
+    // });
+</script>
+
+</html>
