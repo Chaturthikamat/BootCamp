@@ -21,10 +21,10 @@
         text-align: center;
         align-items: center;
         width: 50%;
-        height: auto;
+        height: 50%;
         background: #eee;
         color: #888;
-        border: 1px rgb(51, 51, 51,0.3) solid;
+        border: 1px rgb(51, 51, 51, 0.3) solid;
         border-radius: 3px;
         font-family: 'Times New Roman', Times, serif;
         font-size: 24px;
@@ -37,10 +37,19 @@
 
     li {
         padding: 10px;
-        border-bottom: 1px rgb(51, 51, 51,0.3) solid;
+        border-bottom: 1px rgb(51, 51, 51, 0.3) solid;
     }
 
-    .movies {
+    .show {
+        display: none;
+        color: blue;
+    }
+
+    .notselected {
+        display: block;
+    }
+
+    /* .movies {
         display: none;
         color: red;
     }
@@ -48,14 +57,11 @@
     .songs {
         display: none;
         color: green;
-    }
+    } */
 
-    .shows {
-        display: none;
-        color: blue;
-    }
 
-    .audiobooks {
+
+    /* .audiobooks {
         display: none;
         color: orange;
     }
@@ -63,37 +69,27 @@
     .radio {
         display: none;
         color: blueviolet;
-    }
+    } */
 </style>
 ​
 
 <body>
     <div class="container">
-        <ul class=".menu">
+        <ul class="rtmenu">
             <li class="menu" value=".movies">Movies
-                <div class="movies">Horror</div>
-                <div class="movies">Rom-Com</div>
-                <div class="movies">Scientific Fiction</div>
+                <div class="selected">Horror <br> Rom-Com <br> Scientific Fiction</div>
             </li>
             <li class="menu" value=".songs">Songs
-                <div class="songs"> Party</div>
-                <div class="songs"> EDM </div>
-                <div class="songs"> Sufi</div>
+                <div class="selected"> Party<br> EDM <br> Sufi</div>
             </li>
             <li class="menu" value=".shows"> Tv shows
-                <div class="shows">Sacred Games</div>
-                <div class="shows">Legion</div>
-                <div class="shows">Friends</div>
+                <div class="selected">Sacred Games <br> Legion <br> Friends</div>
             </li>
             <li class="menu" value=".audiobooks">Audio Books
-                <div class="audiobooks"> Big Bang</div>
-                <div class="audiobooks"> The secret </div>
-                <div class="audiobooks">Game of life</div>
+                <div class="selected">any audio book <br> any audio <br> books</div>
             </li>
             <li class="menu" value=".radio"> Radio
-                <div class="radio"> Big FM</div>
-                <div class="radio"> Radio Mirchi </div>
-                <div class="radio">All India</div>
+                <div class="selected">radio <br> radio <br> radio</div>
             </li>
         </ul>
     </div>
@@ -115,18 +111,46 @@
 </body>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('.menu').click(function () {
-            var $clicked = $(this)
-            $('.menu').each(function () {
-                var $menu = $(this);
-                if (!$menu.is($clicked)) {
-                    $($menu.attr('value')).hide();
-                }
-            });
-            $($clicked.attr('value')).slideToggle();
+    //JQUERY IMPROVISATION
+    //check if current entity is active
+    //if not
+    //hide only current
+    //if not hide all active (using js), remove the classes
+    //show current
+
+
+    $('ul li').each(function () {
+        $('li').click(function () {
+            $(".selected").toggleClass('show');
         });
+        $(this).last().addClass("notselected");
+        // $(this).remove('notselected');
     });
+
+
+    
+
+
+
+
+
+
+
+
+
+    //Jquery Task two to toggle the menu
+    // $(document).ready(function () {
+    //     $('.menu').click(function () {
+    //         var $clicked = $(this)
+    //         $('.menu').each(function () {
+    //             var $menu = $(this);
+    //             if (!$menu.is($clicked)) {
+    //                 $($clicked.attr('value')).slideUp();
+    //             }
+    //         });
+    //         $($clicked.attr('value')).slideToggle();
+    //     });
+    // });
 
 
 
