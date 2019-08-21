@@ -13,7 +13,6 @@
     /* .p_main {
         border: 1px solid #f00;
     }
-
     ​ .div_desc {
         display: none;
     } */
@@ -30,42 +29,32 @@
         font-size: 24px;
         margin-left: 25%;
     }
-
     ul {
         list-style-type: none;
     }
-
     li {
         padding: 10px;
         border-bottom: 1px rgb(51, 51, 51, 0.3) solid;
     }
-
     .show {
         display: none;
         color: blue;
     }
-
     .notselected {
         display: block;
     }
-
     /* .movies {
         display: none;
         color: red;
     }
-
     .songs {
         display: none;
         color: green;
     } */
-
-
-
     /* .audiobooks {
         display: none;
         color: orange;
     }
-
     .radio {
         display: none;
         color: blueviolet;
@@ -106,38 +95,39 @@
     <div class="p_main">
         <div class="span_title">Margao</div>
         <div class="div_desc"> Down south, commercial capital of Goa </div>
-
     </div> -->
 </body>
 
 <script type="text/javascript">
     //JQUERY IMPROVISATION
-    //check if current entity is active
-    //if not
-    //hide only current
-    //if not hide all active (using js), remove the classes
-    //show current
+    //check if current entity is active [use hasClass()]
+        //hide only current entity
+    //else 
+        // hide all active (using js), remove the classes [use removeClass()]
+        // show current
+        // tag current entity as 'active' [use addClass()]
+
+    $(document).ready(function () {
+        if($(this).hasClass('active')) {
+
+        } else {
+
+        }
+    });
 
 
-    $('ul li').each(function () {
-        $('li').click(function () {
+
+
+
+
+    $('ul li').click(function () {
+        $('li').each(function () {
             $(".selected").toggleClass('show');
         });
         $(this).last().addClass("notselected");
         // $(this).remove('notselected');
     });
-
-
     
-
-
-
-
-
-
-
-
-
     //Jquery Task two to toggle the menu
     // $(document).ready(function () {
     //     $('.menu').click(function () {
@@ -151,9 +141,6 @@
     //         $($clicked.attr('value')).slideToggle();
     //     });
     // });
-
-
-
     //jquery Task one
     // $(document).ready(function () {
     //     $('.p_main').click(function () {
