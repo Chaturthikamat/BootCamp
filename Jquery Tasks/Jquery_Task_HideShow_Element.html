@@ -40,14 +40,16 @@
         border-bottom: 1px rgb(51, 51, 51, 0.3) solid;
     }
 
-    .show {
-        display: none;
+    .active {
         color: blue;
     }
 
-    .notselected {
-        display: block;
-    }
+    /* 
+    .show {
+        display: none;
+        color: blue;
+    } */
+
 
     /* .movies {
         display: none;
@@ -75,21 +77,21 @@
 
 <body>
     <div class="container">
-        <ul class="rtmenu">
-            <li class="menu" value=".movies">Movies
-                <div class="selected">Horror <br> Rom-Com <br> Scientific Fiction</div>
+        <ul id="current_menu">
+            <li class="menu">Movies
+                <div class="selected_li">Horror <br> Rom-Com <br> Scientific Fiction</div>
             </li>
-            <li class="menu" value=".songs">Songs
-                <div class="selected"> Party<br> EDM <br> Sufi</div>
+            <li class="menu">Songs
+                <div class="selected_li"> Party<br> EDM <br> Sufi</div>
             </li>
-            <li class="menu" value=".shows"> Tv shows
-                <div class="selected">Sacred Games <br> Legion <br> Friends</div>
+            <li class="menu"> Tv shows
+                <div class="selected_li">Sacred Games <br> Legion <br> Friends</div>
             </li>
-            <li class="menu" value=".audiobooks">Audio Books
-                <div class="selected">any audio book <br> any audio <br> books</div>
+            <li class="menu">Audio Books
+                <div class="selected_li">any audio book <br> any audio <br> books</div>
             </li>
-            <li class="menu" value=".radio"> Radio
-                <div class="selected">radio <br> radio <br> radio</div>
+            <li class="menu"> Radio
+                <div class="selected_li">radio <br> radio <br> radio</div>
             </li>
         </ul>
     </div>
@@ -112,27 +114,36 @@
 
 <script type="text/javascript">
     //JQUERY IMPROVISATION
-    //check if current entity is active
-    //if not
-    //hide only current
-    //if not hide all active (using js), remove the classes
-    //show current
-
-
-    $('ul li').each(function () {
-        $('li').click(function () {
-            $(".selected").toggleClass('show');
+    //check if current entity is active [use hasClass()]
+    //hide only current entity
+    //else 
+    // hide all active (using js), remove the classes [use removeClass()]
+    // show current
+    // tag current entity as 'active' [use addClass()]
+    $(document).ready(function () {
+        $('.menu').click(function () {
+            var $accordion = $('#content_menu'),
+                $parent = $(this).closest('li');
+            if ($parent.hasClass('active')) {
+                ($parent).removeClass('active');
+                $parent.find('.selected_li').hide();
+            } else {
+                $accordion.find('.active .selected_li').hide();
+                $accordion.find('.active').removeClass('active');
+                $parent.addClass('active');
+                $parent.find('.selected_li').show();
+            }
         });
-        $(this).last().addClass("notselected");
-        // $(this).remove('notselected');
     });
 
 
-    
-
-
-
-
+    //ANOTHER WAY TO HIDE USING SIMPLE FUNCTIONS
+    //     $(document).ready(function(){
+    //    $('#ul_collection .div_class .div_desc').hide();
+    //    $('#ul_collection .div_class .span_title').click(function() {
+    //        $('#ul_collection .div_class .div_desc').hide();
+    //        $(this).parent().find('.div_desc').show();
+    //    });
 
 
 
