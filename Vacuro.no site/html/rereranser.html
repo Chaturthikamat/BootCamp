@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/vacurologo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Vacuro.no Home|Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Vacuro.no| Rereranser</title>
 </head>
 
 <body>
+    <!-- the header sitelogo and the flag -->
     <div class="header" id="header">
         <div class="site_logo">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9">
                         <a class="navbar-brand" href="https://www.vacuro.no">
-                            <img src="images/vacurologo.jpg" alt="vacuro">
+                            <img src="../images/vacurologo.jpg" alt="vacuro">
                         </a>
                     </div>
                     <div class="col-sm-3 nopadd">
@@ -29,7 +31,7 @@
                                 <ul>
                                     <li class="norwayian_flag_navbar">
                                         <a href="https://www.vacuro.no">
-                                            <img class="flag_selection_navbar" src="images/norwayian_flag.png"
+                                            <img class="flag_selection_navbar" src="../images/norwayian_flag.png"
                                                 alt="nb_flag" title="Norwegian Bokmal">
                                         </a>
                                     </li>
@@ -57,35 +59,35 @@
                                 <ul id="menu-header-menu-norwegian-bokmal" class="nav navbar-nav">
                                     <li
                                         class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-128 current_page_item menu-item-178">
-                                        <a href="index.html">
+                                        <a href="../index.html">
                                             <font style="vertical-align: inherit;">
                                                 <font style="vertical-align: inherit;">Vacuro</font>
                                             </font>
                                         </a>
                                     </li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179">
-                                        <a href="html/about_us.html">
+                                        <a href="../html/about_us.html">
                                             <font style="vertical-align: inherit;">
                                                 <font style="vertical-align: inherit;">About us</font>
                                             </font>
                                         </a>
                                     </li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180">
-                                        <a href="html/products.html">
+                                        <a href="../html/products.html">
                                             <font style="vertical-align: inherit;">
                                                 <font style="vertical-align: inherit;">products</font>
                                             </font>
                                         </a>
                                     </li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-181">
-                                        <a href="html/rereranser.html">
+                                        <a href="../html/rereranser.html">
                                             <font style="vertical-align: inherit;">
                                                 <font style="vertical-align: inherit;">Rereranser</font>
                                             </font>
                                         </a>
                                     </li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182">
-                                        <a href="html/contact.html">
+                                        <a href="../html/contact.html">
                                             <font style="vertical-align: inherit;">
                                                 <font style="vertical-align: inherit;">Contact</font>
                                             </font>
@@ -100,156 +102,79 @@
         </div>
     </div>
 
-    <!--  Banner image div class code -->
-    <div class="menu_container">
-        <div class="banner_section">
-            <img id="hzdownscaled" class="mainPageImage" src="images/header_image_vacuro.jpg">
-        </div>
-        <!-- warning container div class code -->
-        <div class="shipping_container">
-            <div class="container">
-                <div class="row warning">
-                    <div class="col-sm-2">
-                        <!-- warning container div class left image code -->
-                        <div class="left_img">
-                            <img src="http://www.vacuro.no/wp-content/uploads/2016/07/blue.jpg" class="img-responsive">
+    <!-- the rereranser slider image content  -->
+    <div class="referanser-wrapper">
+        <div class="banner_wrap">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item">
+                        <div class="slide_img"
+                            style="background-image:url('http://www.vacuro.no/wp-content/uploads/2016/07/header_bg.jpg')">
+                            &nbsp;
+                        </div>
+                        <div class="caption">
+                            <h1>DB SCHENKER</h1>
                         </div>
                     </div>
 
-                    <div class="col-sm-8">
-                        <div class="mid_text">
-                            <h3 class="color-2">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">SHIPPING OF CONTAINERS</font>
-                                </font>
-                            </h3>
-                            <h4>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Dangerous goods labeling of Intermodal
-                                        containers</font>
-                                </font>
-                            </h4>
+                    <div class="item">
+                        <div class="slide_img"
+                            style="background-image:url('http://www.vacuro.no/wp-content/uploads/2016/07/header_bg.jpg')">
+                            &nbsp;
+                        </div>
+                        <div class="caption">
+                            <h1>By boat</h1>
                         </div>
                     </div>
-                    <!-- warning container div class left image code -->
-                    <div class="col-sm-2">
-                        <div class="right_img">
-                            <img src="http://www.vacuro.no/wp-content/uploads/2016/07/red.jpg" class="img-responsive">
+
+                    <div class="item active">
+                        <div class="slide_img"
+                            style="background-image:url('http://www.vacuro.no/wp-content/uploads/2016/07/header_bg.jpg')">
+                            &nbsp;
+                        </div>
+                        <div class="caption">
+                            <h1>By train</h1>
+                        </div>
+                    </div>
+
+                    <div class="item  ">
+                        <div class="slide_img"
+                            style="background-image:url('http://www.vacuro.no/wp-content/uploads/2016/07/header_bg.jpg')">
+                            &nbsp;
+                        </div>
+                        <div class="caption">
+                            <h1>True flexibility</h1>
                         </div>
                     </div>
                 </div>
 
-                <div class="row vacuro_sec">
-                    <div class="col-sm-6">
-                        <div class="vacuro_simple">
-                            <h3>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Vacuro - Really easy !!!</font>
-                                </font>
-                            </h3>
-                            <p>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">With Vacuro's patented danger holders,
-                                        labeling of containers with dangerous goods makes it easy to play. </font>
-                                </font><br>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">
-                                        Glue-free danger tickets are inserted and removed from the holders in a hand
-                                        turn.</font>
-                                </font>
-                            </p>
-                            <h4>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">The system therefore provides conveyors:
-                                    </font>
-                                </font>
-                            </h4>
-                            <ul>
-                                <li>
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Time savings</font>
-                                    </font>
-                                </li>
-                                <li>
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">cost savings</font>
-                                    </font>
-                                </li>
-                                <li>
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">More secure labeling</font>
-                                    </font>
-                                </li>
-                                <li>
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">environmental benefits</font>
-                                    </font>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                </ol>
 
-                    <div class="col-sm-6">
-                        <div class="why_vacuro">
-                            <h3>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Why Vacuro?</font>
-                                </font>
-                            </h3>
-                            <p><span class="color2">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Vacuro</font>
-                                    </font>
-                                </span>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;"> is composed of two Latin words.</font>
-                                </font>
-                            </p>
-                            <p><span class="color2">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Vacu,</font>
-                                    </font>
-                                </span>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;"> which means: </font>
-                                </font><strong>
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">"be empty"</font>
-                                    </font>
-                                </strong>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;"> , "be free", "be open". </font>
-                                    <font style="vertical-align: inherit;">Vacu describes the label holder itself - the
-                                        label holders have free space for inserting danger labels.</font>
-                                </font>
-                            </p>
-                            <p><span class="color2">
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Curo,</font>
-                                    </font>
-                                </span>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;"> which means: </font>
-                                </font><strong>
-                                    <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">"slip easily"</font>
-                                    </font>
-                                </strong>
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;"> , "take care of", "make sure you find".
-                                    </font>
-                                    <font style="vertical-align: inherit;">Curo describes the function of the label
-                                        holder - the label holders ensure that danger notes slip in and out of the
-                                        holder very easily.</font>
-                                </font>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <i class="material-icons">keyboard_arrow_right </i>
+                </a>
 
-                <hr>
             </div>
         </div>
+
+
+
+
+       
     </div>
 
     <!-- footer class code -->
@@ -308,7 +233,7 @@
 
                 <!-- footer class form code -->
                 <div class="col-sm-3">
-                    <div class="contact-form">
+                    <div class="footer-form">
                         <div id="text-2" class="widget widget_text">
                             <div class="textwidget">
                                 <h4>
@@ -324,8 +249,7 @@
                                             <fieldset>
                                                 <legend class="frm_hidden">
                                                     <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">
-                                                        </font>
+                                                        <font style="vertical-align: inherit;"> </font>
                                                     </font>
                                                 </legend>
 
